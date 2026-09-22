@@ -1,0 +1,292 @@
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f5f7ff;
+    color: #222;
+    line-height:1.6;
+    margin:0;
+    padding-top:70px;
+    min-height: 100vh;
+    flex-direction: column;
+    display: flex;
+}
+
+
+
+
+nav {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background-color: #1e3a8a;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 50px;
+}
+
+nav h2 {
+    font-size: 25px;
+}
+
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+.nav-links{
+    display: flex;
+    gap: 30px;
+}
+.nav-links a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+section {
+    padding: 70px 10%;
+    min-height: 400px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+.logo{
+    font-size: 25px;
+}
+.header-con{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.img{
+
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 250px;
+    margin-top: 40px;
+}
+
+
+
+
+#home {
+    min-height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #e8edff;
+}
+
+#home h1 {
+    font-size: 50px;
+    color: #1e3a8a;
+}
+
+#home h2 {
+    text-align: left;
+    margin: 10px 0;
+}
+
+#home p {
+    max-width: 600px;
+    font-size: 18px;
+}
+
+
+
+button {
+    background-color: #1e3a8a;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 12px 20px;
+    margin-top: 20px;
+
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+button:hover {
+    background-color: #ffd700;
+    color: black;
+}
+
+
+
+
+
+#projects {
+    background-color: white;
+}
+
+.project {
+    background-color:white;
+
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+
+    margin: 1%;
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px #ccc;
+}
+
+.project h3 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+
+
+#case-study {
+    background-color: #eef2ff;
+}
+
+#case-study h3 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+#case-study h4 {
+    margin-top: 20px;
+    color: #333;
+}
+
+
+
+
+
+#about {
+    background-color: white;
+    text-align: center;
+}
+
+#about p {
+    max-width: 750px;
+    margin: auto;
+    font-size:20px;
+}
+
+
+
+#contact {
+    background-color: #eef2ff;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #aaa;
+    border-radius: 5px;
+
+    margin-top: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    #home h1 {
+        font-size: 38px;
+    }
+
+    .project {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+footer{
+    background-color:#1f2937;
+    color:#ffffff;
+    padding: 15px 0;
+    font-family: 'Segoe UI';
+    width:100%;
+    margin-top:auto;
+}
+.footercontent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.footer info h3{
+    margin: 0 0 5px 0;
+    font-size: 18px;
+}
