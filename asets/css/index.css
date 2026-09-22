@@ -207,6 +207,36 @@ button:hover {
     font-size:20px;
 }
 
+    .download-btn {
+  /* Button cha basic look */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0056b3; /* Image madhla blue color */
+  color: #ffffff; /* Text saathi पांढरा (White) color */
+  text-decoration: none; /* Text kharchi line kadhnya saathi */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px; /* Button che corners round karnya saathi */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Halka shadow */
+  transition: all 0.3s ease; /* Hover effect smooth vhava mhnun */
+  cursor: pointer;
+}
+
+/* Hover Effect (Kursor button var nelyavar hoil to badal) */
+.download-btn:hover {
+  background-color: #004085; /* Darker blue color on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Shadow thodi vadhvel */
+  transform: translateY(-2px); /* Button thoda var udel */
+}
+
+/* Active Effect (Button var click kartana) */
+.download-btn:active {
+  transform: translateY(0); /* Button parat normal hoil */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
 
 
 #contact {
